@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mat's Portfolio</title>
+        <script src="https://kit.fontawesome.com/0136f8ccc1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="../index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+         </head>
+    <body>
+
+        <!-- Header -->
+
+        <header id="nav-bar">
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="logo">
+                Dev Plumski
+            </div>
+            <nav class="nav">
+                <ul class="nav__list"> 
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../index.html#services" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="../index.html#work" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="../index.html#about-me" class="nav__link">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Portfolio Item -->
+
+        <section class="portfolio__page">
+            <h2 class="section__title section__title--portfolio-item">a RPG styled coding practise</h2>
+            <h3 class="portfolio__page--intro">
+                Below I share a lot of my thoughts, so in the intrest of your time you can just click the button below and go straight to the project.
+            </h3>
+            <a href="https://mat-plumski.github.io/RPG-1st-project/" class="btn btn--portfolio">
+                Here
+            </a>
+            <div class="portfolio__page--description">
+                <p class="portfolio__page--description--p semi-transparent">
+                    My first ever project, created as a way to reinforce all of the knowledge I had acquired up to that point.
+                     As such it does not make use of certain properties I would now consider to be more appropriate.
+                     For example, <span class="code-text">display:grid</span> together with <span class="code-text">grid-template-areas:</span>
+                     would have made placing certain elements on the board more intuitive.
+                </p>
+                <p class="portfolio__page--description--p semi-transparent">
+                    In order to work effectively and maximise my learnings I had limited myself to 2 weeks of working time.
+                     I believe this constrain mirrored a real project and allowed me to hone my time management and prioritisation skills.
+                </p>
+                <p class="portfolio__page--description--p semi-transparent">
+                    I have to say that working with JavaScript was an absolute blast!
+                     One day I was struggling with re-rendering the board after combat, after 3 hours of checking
+                     everything and slowly eliminating potential causes I had finally managed to crack it.
+                     I have screamed triumphantly like a child,
+                     honestly <strong>I had not felt this level of an acomplishment before in my adult life!</strong>
+                </p>
+                <p class="portfolio__page--description--p semi-transparent">
+                    This "game" demo was designed with scalability in mind so any feature already implemented can be easily expanded on
+                     (such as more heroes, more maps and more varied monsters).
+                     I had also paid attention to the responsiveness of the game window for different sized screens,
+                     and whilst I may not happy with the final result I have learned a great deal from simply attempting it.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+         <footer>
+            <a href="mailto:matmatus88@gmail.com" class="footer__link">matmatus88@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/matmatus95">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="../index.js"></script>
+    </body>
+</html>
