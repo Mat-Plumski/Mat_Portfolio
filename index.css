@@ -63,6 +63,7 @@ section {
 img {
     display: block;
     max-width: 100%;
+    max-height: 100%;
 }
 
 .btn {
@@ -146,6 +147,8 @@ h3 { font-size: var(--fs-h3) }
     font-family: var(--ff-mono);
     font-size: .9em;
 }
+
+.rounded-corners { border-radius: 1em; }
 
 /* Header */
 
@@ -277,10 +280,6 @@ header {
     padding-top: 3em;
     position: relative;
     text-align: center;
-}
-
-.intro__img {
-    border-radius: 1em;
 }
 
 @media (min-width: 600px) {
@@ -425,19 +424,16 @@ header {
 
 .portfolio__page {
     margin: 0 auto;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
 }
 
-.portfolio__page--intro { line-height: 1.6; }
+.section__title--portfolio-item { margin-bottom: .25em; }
 
-.btn--portfolio {
-    margin: 2em auto;
-    padding-inline: 6em;
-    font-size: var(--fs-body);
-    letter-spacing: 3px;
-    text-align: center;
-}
+@media (max-width: 425px) { .section__title--portfolio-item { font-size: 3rem; } }
+
+.portfolio__page--intro { line-height: 1.6; }
 
 .portfolio__page--description {
     display: grid;
@@ -450,6 +446,37 @@ header {
     padding: 1em;
     letter-spacing: 1px;
 }
+
+.btn--portfolio {
+    margin: 2em auto;
+    padding-inline: 6em;
+    font-size: var(--fs-body);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.portfolio__page--image-frame {
+    display: inline-block;
+    width: 200px;
+    cursor: pointer;
+}
+
+.portfolio__page--image-frame--fullscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .portfolio__page--image { border-right: solid .3em var(--clr-accent); }
 
 /* About Me */
 
