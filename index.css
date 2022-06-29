@@ -156,6 +156,7 @@ header {
     padding: 1.65em;
     top: 0;
     z-index: 100;
+    color: var(--clr-light);
 }
 
 .logo {
@@ -164,10 +165,14 @@ header {
     top: 1em;
 }
 
+.logo__link {
+    color: inherit;
+}
+
 .nav {
     position: fixed;
     background: var(--clr-dark);
-    color: var(--clr-light);
+    color: inherit;
     top: 0;
     bottom: 0;
     left: 0;
@@ -202,7 +207,8 @@ header {
     text-decoration: none;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.logo__link:hover {
     color: var(--clr-accent);
 }
 
@@ -287,7 +293,7 @@ header {
         grid-template-areas: 
             "img title"
             "img subtitle"
-            "img highlight";
+            "img high-light";
         grid-template-columns: min-content;
         grid-template-rows: 2fr min-content min-content;
     }
@@ -306,7 +312,7 @@ header {
     }
 
     .section__subtitle--highlight { 
-        grid-area: highlight;
+        grid-area: high-light;
         height: min-content;
         align-self: flex-end;
         margin: 0;
@@ -427,6 +433,9 @@ header {
 
 .btn--portfolio {
     margin: 2em auto;
+    padding-inline: 6em;
+    font-size: var(--fs-body);
+    letter-spacing: 3px;
     text-align: center;
 }
 
@@ -446,15 +455,29 @@ header {
 
 @media (min-width: 1000px) {
 
-    .about-me__body {
-        width: 85%;
+    .about-me {
+        display: grid;
+        grid-template-areas: 
+        "title    decoration"
+        "subtitle decoration"
+        "body     decoration";
+        grid-template-columns: 85% 15%;
     }
 
+    .section__title--about { grid-area: title; }
+    .section__subtitle--about { grid-area: subtitle; }
+    .about-me__body { grid-area: body; padding-right: 1.5em;}
+
     .about-me::after {
+        grid-area: decoration;
         content: "<mat>";
         display: inline-block;
         color: var(--clr-accent);
-        transform: translate(1000px, -200px) scale(950%, 850%) rotate(0.25turn);
+        align-self: center;
+        justify-self: center;
+        line-height: 1rem;
+        font-size: 10.4rem;
+        transform: scale(110%, 110%) rotate(0.25turn);
     }
 }
 
