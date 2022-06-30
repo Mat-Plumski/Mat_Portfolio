@@ -431,9 +431,41 @@ header {
 
 .section__title--portfolio-item { margin-bottom: .25em; }
 
-@media (max-width: 425px) { .section__title--portfolio-item { font-size: 3rem; } }
+.portfolio__page--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.portfolio__page--intro { line-height: 1.6; }
+.portfolio__page--intro {
+    line-height: 1.6;
+    margin-bottom: 1.5em;}
+
+.portfolio__page--image-frame {
+    display: inline-block;
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+}
+
+.portfolio__page--image-frame::before {
+    opacity: 0;
+    content: url("./SVG/magnifying-glass-search-svgrepo-com.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+    width: 50%;
+    height: 35%;
+    transition: opacity 0.7s ease-out;
+}
+
+.portfolio__page--image-frame:hover::before {
+    opacity: 1;
+}
 
 .portfolio__page--description {
     display: grid;
@@ -455,10 +487,29 @@ header {
     text-align: center;
 }
 
-.portfolio__page--image-frame {
-    display: inline-block;
-    width: 200px;
-    cursor: pointer;
+@media (max-width: 425px) { .section__title--portfolio-item { font-size: 3rem; } }
+
+@media (min-width: 600px) {
+
+    .portfolio__page--flex {
+        flex-direction: row;
+    }
+
+    .portfolio__page--intro {
+        margin-bottom: 0;
+        flex-basis: 65vw;
+        padding-right: 1em;
+    }
+
+    .portfolio__page--image {
+        border-right: solid .3em var(--clr-accent);
+    }
+}
+
+@media (min-width: 1050px) {
+    .portfolio__page--image-frame  {
+        width: 300px;
+    }
 }
 
 .portfolio__page--image-frame--fullscreen {
@@ -475,8 +526,6 @@ header {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
   }
-
-  .portfolio__page--image { border-right: solid .3em var(--clr-accent); }
 
 /* About Me */
 

@@ -27,5 +27,6 @@ navLinks.forEach(link => {
 minimisedImages.forEach(image => {
     image.addEventListener("click", () => {
         image.classList.toggle("portfolio__page--image-frame--fullscreen")
+        image.classList.toggle("portfolio__page--image-frame")
     })
 })
