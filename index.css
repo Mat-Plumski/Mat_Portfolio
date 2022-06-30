@@ -447,11 +447,16 @@ header {
     width: 200px;
     cursor: pointer;
     position: relative;
+    transition: transform .7s ease-out;
+}
+
+.portfolio__page--image-frame:hover {
+    transform: scale( 105%, 105% );
 }
 
 .portfolio__page--image-frame::before {
     opacity: 0;
-    content: url("./SVG/magnifying-glass-search-svgrepo-com.svg");
+    content: url("./SVG/magnifying-glass-search-svgrepo-com-white.svg");
     position: absolute;
     left: 0;
     top: 0;
