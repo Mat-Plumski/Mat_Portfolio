@@ -502,8 +502,11 @@ header {
 
     .portfolio__page--intro {
         margin-bottom: 0;
-        flex-basis: 65vw;
         padding-right: 1em;
+    }
+
+    .portfolio__page--intro-with-img {
+        flex-basis: 65vw;
     }
 
     .portfolio__page--image {
