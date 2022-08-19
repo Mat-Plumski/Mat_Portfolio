@@ -13,6 +13,7 @@
     --fw-bold: 700;
     
     --clr-light: #fff;
+    --clr-mild: rgb(218, 218, 218);
     --clr-dark: #303030;
     --clr-darker: #00000050;
     --clr-accent: rgb(224, 22, 89);
@@ -20,6 +21,7 @@
     --fs-h1: 4rem;
     --fs-h2: 2.75rem;
     --fs-h3: 1.25rem;
+    --fs-h4: 1.1rem;
     --fs-body: 1rem;
 }
 
@@ -28,6 +30,7 @@
         --fs-h1: 6.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
+        --fs-h4: 1.25rem;
         --fs-body: 1.125rem;
     }
 }
@@ -37,6 +40,7 @@
         --fs-h1: 7rem;
         --fs-h2: 4.25rem;
         --fs-h3: 2rem;
+        --fs-h4: 1.5rem;
         --fs-body: 1.25rem;
     }
 }
@@ -96,7 +100,8 @@ a { text-decoration: none; }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     line-height: 1.1;
     margin: 0;
 }
@@ -104,6 +109,7 @@ h3 {
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+h4 { font-size: var(--fs-h4) }
 
 .section__title,
 .section__title--intro,
@@ -127,20 +133,6 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle {
     margin: 0;
-    font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro,
-.section__subtitle--highlight {
-    padding-left: .25em;
-}
-
-.section__subtitle--highlight {
-    background: var(--clr-accent);
-    margin-bottom: 0.5em;
-    padding-block: .25em;
-    border-bottom-right-radius: 1em;
-    border-bottom-left-radius: 1em;
 }
 
 .code-text {
@@ -280,6 +272,20 @@ header {
     padding-top: 3em;
     position: relative;
     text-align: center;
+}
+
+.section__subtitle--intro,
+.section__subtitle--highlight {
+    font-size: var(--fs-h3);
+    padding-left: .25em;
+}
+
+.section__subtitle--highlight {
+    background: var(--clr-accent);
+    margin-bottom: 0.5em;
+    padding-block: .25em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
 
 @media (min-width: 600px) {
@@ -536,6 +542,15 @@ header {
   }
 
 /* About Me */
+
+.section__subtitle--about {
+    font-size: var(--fs-h4);
+    color: var(--clr-mild);
+}
+
+.about-me__accent {color: var(--clr-accent);}
+
+.about-me__p {text-align: justify;}
 
 @media (min-width: 1000px) {
 

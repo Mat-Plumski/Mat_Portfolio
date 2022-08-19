@@ -1,0 +1,22 @@
+ 
+        <!-- My Skills
+
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I've learned so far</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>HTML</h3>
+                    <p>HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.
+                     For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.</p>
+                </div>
+                <div class="service">
+                    <h3>CSS</h3>
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p>
+                </div>
+                <div class="service">
+                    <h3>JavaScript</h3>
+                    <p>Javascript is used by programmers across the world to create dynamic and interactive web content like applications and browsers.
+                     JavaScript is so popular that it's the most used programming language in the world, used as a client-side programming language by 97.0% of all websites.</p>
+                </div>
+            </div>
+        </section> -->
